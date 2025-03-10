@@ -8,8 +8,6 @@
 
 ```bash
 $ cat hello_world.c | cargo run
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
-     Running `target/debug/format-brackets`
 ```
 ```c
 #include <stdio.h>
