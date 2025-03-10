@@ -161,7 +161,7 @@ fn single_iteration(
     }
 
     // Check for patterns opening
-    if last_literal.is_none() {
+    if literal_stack.is_empty() {
         for (idx, (opening_pattern, _)) in args.patterns.iter().enumerate() {
             let pos = opening_pattern.find_in(text);
             merge_min(&mut max_possible_jump_bytes, pos);

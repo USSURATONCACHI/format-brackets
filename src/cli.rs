@@ -13,7 +13,7 @@ pub struct Args {
         short = 'p', long, num_args = 2, 
         value_names = ["opening_pattern", "closing_pattern"], 
         help = "List of pairs of plain-text patterns to format against",
-        default_values = &["(", ")", "[", "]", "{", "}"],
+        default_values = &["(", ")", "[", "]", "{", "}",  "#[", "]",  "|", "|"],
     )]
     patterns: Vec<String>,
 
@@ -28,7 +28,7 @@ pub struct Args {
         short = 'l', long, num_args = 2, 
         value_names = ["opening_pattern", "closing_pattern"], 
         help = "List of pairs of plain-text patterns of string literals, formatting in which will be ignored",
-        default_values = &["\"", "\"", "«", "»", "'", "'", "„", "“", "//", "\n", "/*", "*/", "#=", "=#", "#", "\n"],
+        default_values = &["\"", "\"",   "«", "»",   "'", "'",   "„", "“",   "//", "\n",   "/*", "*/",    "#=", "=#",   "#", "\n"],
     )]
     literals: Vec<String>,
 
